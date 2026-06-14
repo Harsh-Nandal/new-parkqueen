@@ -1,0 +1,77 @@
+.instagram-banner-items {
+
+    .banner-image {
+        position: relative;
+
+        img {
+            @include imgw;
+            border-radius: 6px;
+        }
+
+        &::before {
+            @include before;
+            background: $theme-color;
+            opacity: 0.6;
+            transform: scale(1, 0);
+            transition: transform 500ms ease;
+            transform-origin: bottom center;
+            z-index: 1;
+            border-radius: 6px;
+        }
+
+        .icon {
+            position: absolute;
+            font-size: 50px;
+            transform: translate(-50%,-50%);
+            top: 20%;
+            left: 80%;
+            transform: translate(50%, -50%) scale(0.5);
+            display: inline-block;
+            z-index: 99;
+            color: $white;
+            opacity: 0;
+            @include transition;
+        }
+    }
+
+    &:hover {
+        .banner-image {
+            &::before {
+                transform: scale(1, 1);
+                transform-origin: top center;
+            }
+            .icon {
+                opacity: 1;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+    }
+}
+
+
+
+.instagram-section {
+    margin-top: -180px;
+    position: relative;
+    z-index: 999;
+
+    @include breakpoint (max-xxl) {
+       margin-top: 100px;
+    }
+
+    @include breakpoint (max-lg) {
+        margin-top: 80px;
+    }
+
+    .instagram-banner-slider {
+        margin-left: -100px;
+        margin-right: -100px;
+
+        @include breakpoint (max-xxl) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}

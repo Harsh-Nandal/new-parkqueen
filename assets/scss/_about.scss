@@ -1,0 +1,346 @@
+.about-wrapper {
+
+    .about-image {
+        position: relative;
+        z-index: 9;
+        max-width: 622px;
+       
+
+        @include breakpoint (max-xxl) {
+            max-width: initial;
+        }
+
+        &::after {
+           position: absolute;
+            content: "";
+            left: 38px;
+            height: 100%;
+            width: 85%;
+            bottom: -30px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.05);
+            z-index: -1;
+
+            @include breakpoint (max-xxl) {
+                display: none;
+            }
+        }
+
+         &::before {
+            position: absolute;
+            content: "";
+            left: 20px;
+            height: 100%;
+            width: 92%;
+            bottom: -14px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.40);
+            z-index: -1;
+
+            @include breakpoint (max-xxl) {
+                display: none;
+            }
+          }
+
+        img {
+            @include imgw;
+            border-radius: 10px;
+        }
+
+        .shape {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 34px;
+        }
+    }
+
+    .about-content {
+        
+
+        .text {
+            max-width: 690px;
+            margin-top: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .list-item {
+            @include flex;
+            gap: 60px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+
+             @include breakpoint (max-xxl) {
+                gap: 16px;
+            }
+
+            @include breakpoint (max-lg) {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .list {
+
+                li {
+                    font-size: 18px;
+                   font-weight: 500;
+
+                    color: $header-color;
+
+                    @include breakpoint (max-xxl) {
+                      font-size: 15px;
+                    }
+
+                    @include breakpoint (max-lg) {
+                      font-size: 16px;
+                    }
+
+                    i {
+                        color: $theme-color;
+                        margin-right: 10px;
+
+                        @include breakpoint (max-xxl) {
+                            margin-right: 4px;
+                        }
+
+                         @include breakpoint (max-lg) {
+                            margin-right: 10px;
+                        }
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        .hero-button-item {
+            @include flex;
+            justify-content: space-between;
+            padding: 30px;
+            border-radius: 10px;
+            position: relative;
+
+            @include breakpoint (max-lg) {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .top-shape {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+
+                img {
+                    @include imgw;
+                    border-radius: 10px;
+                }
+            }
+
+            .button-text {
+
+                span {
+                    font-size: 14px;
+                    color: $white;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    position: relative;
+                }
+
+                .video-btn {
+                    background-color: $white;
+                    color: $theme-color;
+                    display: inline-block;
+                    font-size: 16px;
+                    height: 51px;
+                    width: 51px;
+                    line-height: 51px;
+                    border-radius: 50%;
+                    text-align: center;
+                    position: relative;
+
+                    &::before {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        right: 0;
+                        bottom: 0;
+                        width: 63px;
+                        height: 63px;
+                        border-radius: 50%;
+                        border: 1px solid rgba(255, 255, 255, 0.15);
+                        content: "";
+                        transform: translate(-50%,-50%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about-wrapper-2 {
+    position: relative;
+
+    .shape {
+        position: absolute;
+        right: 135px;
+        top: 330px;
+
+         @include breakpoint (max-xxl) {
+           display: none;
+        }
+    }
+
+    .about-left-item {
+
+         .about-image {
+            margin-top: 50px;
+            max-width: 450px;
+            overflow: hidden;
+
+             @include breakpoint (max-xxl) {
+                max-width: initial;
+                margin-top: 30px;
+            }
+
+            img {
+                @include imgw;
+                border-radius: 6px;
+            }
+         }
+
+         .about-list {
+            margin-top: 160px;
+
+            @include breakpoint (max-xxl) {
+                margin-top: 30px;
+            }
+
+            .list {
+                margin-top: 15px;
+
+                li {
+                    color: $header-color;
+
+                    i {
+                        color: $theme-color;
+                        margin-right: 15px;
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+         }
+    }
+
+    .about-right-content {
+        margin-left: 288px;
+
+         @include breakpoint (max-xxl) {
+            margin-left: 0;
+        }
+
+        .text {
+            max-width: 690px;
+            margin-top: 20px;
+        }
+
+        .about-item {
+            margin-top: 75px;
+            display: flex;
+            gap: 30px;
+
+            @include breakpoint (max-xxl) {
+                margin-top: 30px;
+            }
+
+             @include breakpoint (max-md) {
+                margin-top: 30px;
+                flex-wrap: wrap;
+            }
+
+            .left-image {
+                max-width: 450px;
+                margin-left: -280px;
+                height: 477px;
+                overflow: hidden;
+
+                 @include breakpoint (max-xxl) {
+                    margin-left: 0;
+                    max-width: initial;
+                    height: initial;
+                }
+
+                img {
+                    @include imgw;
+                    border-radius: 1000px 1000px 6px 6px;
+                }
+            }
+
+            .right-item {
+                margin-top: 50px;
+
+                 @include breakpoint (max-xxl) {
+                    margin-top: 0px;
+                }
+
+                .about-button {
+                    @include flex;
+                    gap: 20px;
+                    margin-bottom: 110px;
+                    margin-left: 100px;
+
+                     @include breakpoint (max-xxl) {
+                        margin-left: 0;
+                        margin-bottom: 30px;
+                    }
+
+
+                    .theme-btn {
+
+                        @include breakpoint (max-xxl) {
+                            padding: 16px 20px;
+                            font-size: 14px;
+                        }
+
+                        @include breakpoint (max-lg) {
+                            padding: 16px 25px;
+                            font-size: 16px;
+                        }
+
+                        &.style-color {
+                            background-color: $header-color;
+
+                            &::before {
+                                background-color: $theme-color;
+                            }
+                        }
+                    }
+                }
+
+                .right-image {
+                    max-width: 450px;
+                    overflow: hidden;
+
+                     @include breakpoint (max-xxl) {
+                       max-width: initial;
+                    }
+
+                    img {
+                        @include imgw;
+                        border-radius: 6px;
+                    }
+                }
+            }
+        }
+    }
+}
+
