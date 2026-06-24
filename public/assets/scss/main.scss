@@ -1,0 +1,104 @@
+/*
+Theme Name: Restin 
+Author: Gramentheme
+Author URI: https://themeforest.net/user/Gramentheme/portfolio
+Description: Restin - Hotel Booking HTMl Template
+Service Html Template 
+Version: 1.0.0
+*/
+
+/*CSS Table Of Content Ends Here*/
+
+/*
+--------------------------------------------------------------
+[Table of Contents]
+--------------------------------------------------------------
+01. Variables & Mixins
+02. Typography
+03. Buttons
+04. About 
+05. Animation 
+06. Brand 
+07. Contact
+08. Cta
+09. Faq
+10. Feature
+11. Footer
+12. Header
+13. Helping
+14. Hero
+15. Marquee
+16. Meanmenu
+17. News
+18. Preloader
+19. Room
+20. Section
+21. Service
+22. Team
+23. Testimonial
+
+
+
+--------------------------------------------------------------
+*/
+
+//>> Basic Start <<//
+
+//>> Mixins <<//
+@import "_mixins";
+//>> Variables <<//	
+@import "_variables";
+//>> Buttons <<//
+@import "_buttons";
+//>> Typography <<//
+@import "_typography";
+//>> Basic End <<//	
+
+
+//>> Template Section Style Start <<//
+
+//>> About <<//
+@import "_about";
+//>> Animation <<//
+@import "_animation";
+//>> Brand <<//
+@import "_brand";
+//>> Contact <<//
+@import "_contact";
+//>> Cta <<//
+@import "_cta";
+//>> Faq <<//
+@import "_faq";
+//>> Feature <<//
+@import "_feature";
+//>> Footer <<//
+@import "_footer";
+//>> Header <<//
+@import "_header";
+//>> Helping <<//
+@import "_helping";
+//>> Hero <<//
+@import "_hero";
+//>> Marquee <<//
+@import "_marquee";
+//>> MeanMenu <<//
+@import "_meanmenu";
+//>> News <<//
+@import "_news";
+//>> _Preloader <<//
+@import "_preloader";
+//>> Room <<//
+@import "_room";
+//>> Section <<//
+@import "_section";
+//>> Service <<//
+@import "_service";
+//>> Team <<//
+@import "_team";
+//>> Testimonial <<//
+@import "_testimonial";
+
+
+
+//>> Template Section Style End <<//
+

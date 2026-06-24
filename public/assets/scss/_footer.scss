@@ -1,0 +1,308 @@
+.footer-newsletter {
+    @include flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding: 30px 30px;
+    background-color: $theme-color;
+    border-radius: 16px;
+
+    @include breakpoint (max-xxl) {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 30px;
+        margin-top: 80px;
+    }
+
+    .newsletter-content {
+        h3 {
+            color: $white;
+            font-size: 40px;
+            margin-bottom: 10px;
+
+            @include breakpoint (max-xxl) {
+                font-size: 30px;
+            }
+        }
+
+        p {
+            font-weight: 500;
+            color: $white;
+            max-width: 442px;
+        }
+    }
+
+    form {
+        max-width: 765px;
+        width: 100%;
+    }
+
+     .form-clt {
+        position: relative;
+
+        i {
+            top: 43%;
+            left: 24px;
+            position: absolute;
+            color: #A6A6A6;
+
+            @include breakpoint (max-sm) {
+              display: none;
+            }
+        }
+
+        input {
+            width: 100%;
+            outline: none;
+            border: none;
+            background-color: $white;
+            color: #A6A6A6;
+            line-height: 1;
+            padding: 25px 0px 25px 50px;
+            border-radius: 10px;
+            max-width: 765px;
+
+             @include breakpoint (max-lg) {
+                padding: 20px 0px 20px 50px;
+            }
+
+            @include breakpoint (max-sm) {
+                padding: 20px 0px 20px 20px;
+            }
+
+            &::placeholder {
+                color: #A6A6A6;
+            }
+        }
+
+         .theme-btn {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            bottom: 4px;
+
+             @include breakpoint (max-sm) {
+                padding: 18px 16px;
+                font-size: 14px;
+            }
+        }
+     } 
+}
+
+
+.footer-widget-wrapper {
+    padding: 30px 0 48px;
+
+    .single-footer-widget {
+        margin-top: 30px;
+
+        .widget-title {
+            margin-bottom: 20px;
+
+            h5 {
+                color: $white;
+                position: relative;
+                padding-bottom: 15px;
+                
+                 &::before {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    content: "";
+                    width: 4px;
+                    height: 2px;
+                    background-color: $theme-color;
+                }
+
+                &::after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 10px;
+                    content: "";
+                    width: 81px;
+                    height: 2px;
+                    background-color: $theme-color;
+                }
+            }
+        }
+
+        .footer-content {
+            p {
+                color: $white;
+                max-width: 290px;
+            }
+        }
+
+        .list {
+            li {
+                @include transition;
+                font-weight: 400;
+
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+
+                a {
+                    color: $white;
+                }
+
+                &:hover {
+                    margin-left: 5px;
+
+                    a {
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+
+        .date-list {
+            li {
+                @include flex;
+                gap: 30px;
+                color: $white;
+
+                @include breakpoint (max-xxl) {
+                    gap: 17px;
+                }
+
+                @include breakpoint (max-lg) {
+                    gap: 30px;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 16px;
+                }
+
+                span {
+
+                     &.style-1 {
+                        display: inline-block;
+                        margin-left: -5px;
+                    }
+                    &.style-3 {
+                        display: inline-block;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        .contact-item {
+            li {
+                display: flex;
+                align-items: start;
+                color: $white;
+                gap: 8px;
+
+                &.style-2 {
+                    @include flex;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+
+                a {
+                    color: $white;
+                }
+
+                i {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.footer-section {
+    position: relative;
+    z-index: 999;
+
+    &::before {
+        @include before;
+        background: linear-gradient(180deg, rgba(13, 13, 13, 0.60) 0%, #0D0D0D 55%);
+        z-index: -1;
+    }
+}
+
+.footer-bottom {
+    padding-bottom: 40px;
+
+    .footer-wrapper {
+        border-top: 1px solid rgba(255, 255, 255, 0.20);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+        padding: 30px 0;
+        margin-bottom: 30px;
+        @include flex;
+        justify-content: space-between;
+
+        @include breakpoint (max-xxl) {
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        @include breakpoint (max-sm) {
+                justify-content: center;
+            }
+
+        .social-icon {
+            @include flex;
+            gap: 18px;
+
+            a {
+                color: $white;
+                opacity: 0.7;
+                font-size: 25px;
+
+                &:hover {
+                    color: $theme-color;
+                    opacity: none;
+                }
+            }
+        }
+
+        .footer-list {
+            @include flex;
+            gap: 24px;
+
+             @include breakpoint (max-xxl) {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+             @include breakpoint (max-sm) {
+                justify-content: center;
+            }
+
+            li {
+                color: $white;
+                opacity: 0.7;
+
+                a {
+                    color: $white;
+                    opacity: 0.7;
+
+                    &:hover {
+                       color: $theme-color;
+                       opacity: none;
+                    }
+                }
+            }
+        }
+
+        p {
+            color: $white;
+
+            span {
+                text-transform: uppercase;
+                color: $theme-color;
+            }
+        }
+    }
+
+    .footer-logo {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+}

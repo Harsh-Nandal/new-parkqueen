@@ -1,0 +1,132 @@
+.faq-wrapper {
+
+    .faq-content {
+        margin-right: 30px;
+
+        @include breakpoint (max-xxl) {
+            margin-right: 0;
+        }
+
+        .text {
+            margin-top: 20px;
+            max-width: 630px;
+            margin-bottom: 30px;
+        }
+
+        .faq-items {
+            position: relative;
+            z-index: 9;
+
+            .accordion {
+                .accordion-item {
+                    border: none;
+
+                h5 {
+                    button {
+                    line-height: 1;
+                    font-size: 24px;
+                    font-weight: 400;
+                    padding: 20px 25px;
+                    color: $header-color;
+                    cursor: pointer;
+
+                        @include breakpoint(max-sm) {
+                            font-size: 18px;
+                            line-height: 1.6;
+                            padding: 22px 20px;
+                        }
+                    }
+                }
+
+                .accordion-body {
+                    padding: 0 25px 20px;
+                    background-color: #F4F4F4;
+
+                    p {
+                        font-size: 15px;
+                        line-height: 24px;
+                        font-weight: 400;
+
+                        @include breakpoint(max-sm) {
+                            width: 100%;
+                            font-size: 14px;
+                            line-height: 28px;
+                        }
+                    }
+                }
+            }
+
+            .accordion-button {
+                background-color: #F4F4F4;
+                color: $header-color;
+
+                &:focus {
+                    box-shadow: none !important;
+                    outline: none !important;
+                    border-color: transparent !important;
+                }
+                
+                &::after {
+                    content: "\f078";
+                    font-family: "Font Awesome 6 Pro";
+                    background: transparent;
+                    font-weight: 600;
+                    transition: all 0.3s ease-in-out !important;
+                    color: $header-color;
+                }
+
+                &:not(.collapsed) {
+                    background-color: #F4F4F4;
+                    color: $theme-color;
+                    box-shadow: initial;
+
+                    &::after {
+                        content: "\f077";
+                        font-family: "Font Awesome 6 Pro";
+                        background: transparent;
+                        font-weight: 600;
+                        color: $theme-color;
+                        transform: rotate(0);
+                    }
+                }
+             }
+          }
+        }
+    }
+
+    .faq-image {
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+
+        img {
+            @include imgw;
+            border-radius: 10px;
+        }
+
+        .faq-man-image {
+            position: absolute;
+            bottom: 0;
+            left: 50px;
+            overflow: hidden;
+
+            @include breakpoint (max-xxl) {
+                max-width: 200px;
+            }
+
+            img {
+                border-radius: 0;
+            }
+        }
+
+        .faq-box {
+            background-color: $white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 10px;
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,472 @@
+{
+  "global": {
+    "logo": "/assets/images/logo.png",
+    "siteName": "The ParkQueen Hotel",
+    "phone": "+91 9088809991",
+    "email": "fom@parkqueenhotels.com",
+    "address": "The ParkQueen Hotel, Opposite Devi Lal Park, Rohtak, Haryana 124001, India",
+    "footerBg": "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1600&q=80",
+    "footerTagline": "At The ParkQueen Hotel, luxury is a crafted experience that blends elegance, comfort, and exceptional service in Rohtak."
+  },
+  "home": {
+    "hero": {
+      "backgroundImage": "/assets/images/home/12121.jpg.jpeg",
+      "heading": "The ParkQueen Hotel",
+      "subheading": "Luxury Hotel in Rohtak",
+      "subtext": "Indulge in a luxurious hotel stay where comfort meets style, offering world-class amenities, elegant design, and exceptional personalized service."
+    },
+    "about": {
+      "image": "/assets/images/home/NDS_5148.jpg",
+      "subTitle": "The Heart of Hospitality",
+      "heading": "Welcome To a World of Warmth & Elegance Hotel",
+      "text": "Welcome to The ParkQueen Hotel, your destination for luxury hospitality and effortless comfort in Rohtak. Enjoy refined service, elegant design, and exceptional experiences on every stay."
+    },
+    "featureList": [
+      "Easy and secure online booking",
+      "Exclusive discounts and offers",
+      "24/7 customer support",
+      "Flexible cancellation policies"
+    ],
+    "rooms": [
+      {
+        "id": 1,
+        "image": "/assets/images/rooms/ROOM2.jpg",
+        "category": "Executive Room",
+        "name": "Executive Room",
+        "price": "₹5,500 + GST"
+      },
+      {
+        "id": 2,
+        "image": "/assets/images/rooms/newroom.jpeg",
+        "category": "Superior Room",
+        "name": "Superior Room",
+        "price": "₹6,000 + GST"
+      },
+      {
+        "id": 3,
+        "image": "/assets/images/rooms/ROOM3.jpg",
+        "category": "Queen Suite",
+        "name": "Queen Suite",
+        "price": "₹6,500 + GST"
+      },
+      {
+        "id": 4,
+        "image": "/assets/images/rooms/ROOM4.jpg",
+        "category": "Presidential Suite",
+        "name": "Presidential Suite",
+        "price": "₹7,499 + GST"
+      },
+      {
+        "id": 5,
+        "image": "/assets/images/rooms/ROOM5.jpg",
+        "category": "Executive Room",
+        "name": "Executive Room",
+        "price": "₹5,500 + GST"
+      }
+    ],
+    "roomsBg": "/assets/images/dining/NDS_5117.jpg",
+    "roomsHeading": "Our Rooms / Accommodation",
+    "roomsSubtext": "At The ParkQueen Hotel, we present exquisite rooms and suites crafted for modern luxury in Rohtak. Each space features premium amenities, elegant finishes, and a welcoming ambiance.",
+    "testimonialBg": {
+      "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782211186/parkqueen/testimonial/ejif4nwdbssks75rotpr.jpg",
+      "public_id": "parkqueen/testimonial/ejif4nwdbssks75rotpr"
+    },
+    "newsSubtitle": "Choose Your Perfect Stay",
+    "newsHeading": "Our Latest News Feed",
+    "newsItems": [
+      {
+        "id": 1,
+        "date": "April 12, 2025",
+        "category": "Tips & Enjoy",
+        "title": "Toast to the Good Life Our Sommelier's Picks"
+      },
+      {
+        "id": 2,
+        "date": "April 12, 2025",
+        "category": "Tips & Enjoy",
+        "title": "Toast to the Good Life Our Sommelier's Picks"
+      },
+      {
+        "id": 3,
+        "date": "April 12, 2025",
+        "category": "Tips & Enjoy",
+        "title": "Toast to the Good Life Our Sommelier's Picks"
+      },
+      {
+        "id": 4,
+        "date": "April 12, 2025",
+        "category": "Tips & Enjoy",
+        "title": "Toast to the Good Life Our Sommelier's Picks"
+      }
+    ],
+    "newsImages": [
+      {
+        "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782298899/parkqueen/news/rqytedhhvwhg6kkkthhw.jpg",
+        "public_id": "parkqueen/news/rqytedhhvwhg6kkkthhw"
+      },
+      {
+        "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782298902/parkqueen/news/lqep3nqyvomuv7rvrlct.jpg",
+        "public_id": "parkqueen/news/lqep3nqyvomuv7rvrlct"
+      },
+      {
+        "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782298905/parkqueen/news/m8qae9rdw8qswfgwuoih.jpg",
+        "public_id": "parkqueen/news/m8qae9rdw8qswfgwuoih"
+      },
+      {
+        "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782298908/parkqueen/news/mdwegf2ni3ycwtgsar7w.jpg",
+        "public_id": "parkqueen/news/mdwegf2ni3ycwtgsar7w"
+      }
+    ],
+    "offersSubtitle": "our special offer",
+    "offersHeading": "Our Latest Special Offer's",
+    "offerItems": [
+      {
+        "id": 1,
+        "title": "Rohtak Heritage Tour",
+        "cardTitle": "ParkQueen Special",
+        "image": {
+          "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782209090/parkqueen/offers/lt25gbeknmoe7qdrbxrg.jpg",
+          "public_id": "parkqueen/offers/lt25gbeknmoe7qdrbxrg"
+        },
+        "cardImage": {
+          "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782209096/parkqueen/offers/muizsqk3cjhsfrzwpz5x.jpg",
+          "public_id": "parkqueen/offers/muizsqk3cjhsfrzwpz5x"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Special Dining Experience",
+        "cardTitle": "Celebrating Freedom",
+        "image": {
+          "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782209100/parkqueen/offers/ihjsw067gdqu68tdwh1c.jpg",
+          "public_id": "parkqueen/offers/ihjsw067gdqu68tdwh1c"
+        },
+        "cardImage": {
+          "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782209106/parkqueen/offers/tn7tvvphv9zpsdo625cx.jpg",
+          "public_id": "parkqueen/offers/tn7tvvphv9zpsdo625cx"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Extend Your Stay",
+        "cardTitle": "Celebrating Freedom",
+        "image": {
+          "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782209117/parkqueen/offers/mulmizg9qle8v4vshmpd.jpg",
+          "public_id": "parkqueen/offers/mulmizg9qle8v4vshmpd"
+        },
+        "cardImage": {
+          "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782209122/parkqueen/offers/stxasjgdwossuau3sdv4.jpg",
+          "public_id": "parkqueen/offers/stxasjgdwossuau3sdv4"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Stay a Bit Longer",
+        "cardTitle": "Celebrating Freedom",
+        "image": {
+          "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782209130/parkqueen/offers/o8htrxxgikivv76yuiqg.jpg",
+          "public_id": "parkqueen/offers/o8htrxxgikivv76yuiqg"
+        },
+        "cardImage": {
+          "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782209137/parkqueen/offers/lhwc0ovinqvruvd0zuuq.jpg",
+          "public_id": "parkqueen/offers/lhwc0ovinqvruvd0zuuq"
+        }
+      },
+      {
+        "id": 5,
+        "title": "Rohtak Festival Packages",
+        "cardTitle": "Celebrating Freedom",
+        "image": {
+          "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782209140/parkqueen/offers/dvwt182wvvrubg9ijnkt.jpg",
+          "public_id": "parkqueen/offers/dvwt182wvvrubg9ijnkt"
+        },
+        "cardImage": {
+          "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782209149/parkqueen/offers/gn9pg7302bs5t8wsnvwb.jpg",
+          "public_id": "parkqueen/offers/gn9pg7302bs5t8wsnvwb"
+        }
+      }
+    ],
+    "diningHeading": "Our Signature Dining",
+    "diningSubtext": "Embark on a journey of exquisite experiences, encompassing impeccable service, sophisticated ambience and masterful culinary artistry.",
+    "diningImages": [
+      {
+        "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782204218/parkqueen/dining/kictskvanrf8j68t1jhk.jpg",
+        "public_id": "parkqueen/dining/kictskvanrf8j68t1jhk"
+      },
+      {
+        "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782204222/parkqueen/dining/m7yf0wmlzhamo87eiihi.jpg",
+        "public_id": "parkqueen/dining/m7yf0wmlzhamo87eiihi"
+      },
+      {
+        "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782204222/parkqueen/dining/f8c57qefzszbu8ru3vk2.jpg",
+        "public_id": "parkqueen/dining/f8c57qefzszbu8ru3vk2"
+      },
+      {
+        "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782204227/parkqueen/dining/s1qleyoiuiafealsfgtu.jpg",
+        "public_id": "parkqueen/dining/s1qleyoiuiafealsfgtu"
+      }
+    ],
+    "hotelImages": [
+      {
+        "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782204253/parkqueen/dining/rcyvbkp4ayryzp63ismh.jpg",
+        "public_id": "parkqueen/dining/rcyvbkp4ayryzp63ismh"
+      },
+      {
+        "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782204273/parkqueen/dining/x4fpdgbsph24rlwltmmx.jpg",
+        "public_id": "parkqueen/dining/x4fpdgbsph24rlwltmmx"
+      },
+      {
+        "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782204282/parkqueen/dining/x9waf31alwqkkvktimda.jpg",
+        "public_id": "parkqueen/dining/x9waf31alwqkkvktimda"
+      },
+      {
+        "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782204288/parkqueen/dining/chym5xgkjholkahymxlc.jpg",
+        "public_id": "parkqueen/dining/chym5xgkjholkahymxlc"
+      }
+    ],
+    "marqueeItems": [
+      "Health and Fitness",
+      "Rohtak's Premier Hotel",
+      "Best Luxury Resort in Rohtak",
+      "Luxury Hotel in Rohtak",
+      "Modern City Hotel",
+      "Best Luxury Resort"
+    ]
+  },
+  "about": {
+    "breadcrumbBg": {
+      "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782130386/parkqueen/sdrdk8hujasqi0ifwq1b.jpg",
+      "public_id": "parkqueen/sdrdk8hujasqi0ifwq1b"
+    },
+    "mainImage": "/assets/images/about/NDS_5014.jpg",
+    "subTitle": "The Heart of Hospitality",
+    "heading": "Welcome To a World of Warmth & Elegance Hotel",
+    "text": "Welcome to The ParkQueen Hotel, your destination for luxury hospitality and effortless comfort in Rohtak. Enjoy refined service, elegant design, and exceptional experiences on every stay. We are committed to making every visit personal, polished, and truly unforgettable.",
+    "buttonText": "Know more about us",
+    "videoLink": "#",
+    "newsSection": {
+      "subtitle": "news & blog",
+      "heading": "Latest News & Articles",
+      "buttonText": "VIEW ALL ARTICLES",
+      "buttonLink": "/news"
+    },
+    "featuredPosts": [
+      {
+        "id": 1,
+        "title": "Why The ParkQueen Hotel Is Rohtak's Premier Destination",
+        "excerpt": "Discover why The ParkQueen Hotel stands as Rohtak's finest luxury destination, offering world-class amenities and exceptional hospitality.",
+        "image": {
+          "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782300601/parkqueen/about/news/hyufyohbg9zwlijenr70.jpg",
+          "public_id": "parkqueen/about/news/hyufyohbg9zwlijenr70"
+        },
+        "category": "Hospitality",
+        "author": "Admin",
+        "publishedAt": "2025-04-17",
+        "slug": "parkqueen-rohtaks-premier-destination",
+        "ctaText": "READ MORE",
+        "ctaLink": "/news"
+      },
+      {
+        "id": 2,
+        "title": "Discover Our Signature Dining Experience in Rohtak",
+        "excerpt": "Experience fine dining at its best with our signature restaurant offering a blend of traditional and continental cuisine.",
+        "image": {
+          "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782300606/parkqueen/about/news/e4nbzj6zqibpjm4vgkzb.jpg",
+          "public_id": "parkqueen/about/news/e4nbzj6zqibpjm4vgkzb"
+        },
+        "category": "Dining",
+        "author": "Admin",
+        "publishedAt": "2025-04-20",
+        "slug": "signature-dining-rohtak",
+        "ctaText": "READ MORE",
+        "ctaLink": "/news"
+      },
+      {
+        "id": 3,
+        "title": "5 Reasons to Host Your Next Event at The ParkQueen Hotel",
+        "excerpt": "From corporate conferences to grand weddings, discover why ParkQueen is Rohtak's premier event and banquet destination.",
+        "image": {
+          "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782300611/parkqueen/about/news/ko4ukbpwlogarrwolwyv.jpg",
+          "public_id": "parkqueen/about/news/ko4ukbpwlogarrwolwyv"
+        },
+        "category": "Events",
+        "author": "Admin",
+        "publishedAt": "2025-04-25",
+        "slug": "host-events-parkqueen",
+        "ctaText": "READ MORE",
+        "ctaLink": "/news"
+      }
+    ]
+  },
+  "news": {
+    "breadcrumbBg": {
+      "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782299262/parkqueen/news/cploomnpwh6fpvryaidb.jpg",
+      "public_id": "parkqueen/news/cploomnpwh6fpvryaidb"
+    },
+    "breadcrumbTitle": "Blog & News",
+    "recentPostsTitle": "Recent Posts",
+    "popularTagsTitle": "Popular Tags",
+    "tags": [
+      "HotelBooking",
+      "LuxuryStay",
+      "RoomWithAView",
+      "HotelOffers",
+      "TravelInspiration",
+      "CityBreak",
+      "HolidayPlanning",
+      "Staycation",
+      "BookNow"
+    ],
+    "staticPosts": [
+      {
+        "id": 1,
+        "title": "Luxury Travel Trends for the Modern Explorer",
+        "excerpt": "Discover smart interior design tips that transform your home into a stylish sanctuary.",
+        "image": { "url": "/assets/img/home-2/news/10.jpg" },
+        "category": "Hospitality",
+        "author": "Admin",
+        "publishedAt": "2025-03-11",
+        "slug": "luxury-travel-trends",
+        "views": 19,
+        "ctaText": "VIEW MORE",
+        "ctaLink": "/news"
+      },
+      {
+        "id": 2,
+        "title": "Luxury Amenities That Redefine Comfort",
+        "excerpt": "Maximize your hotel stay with simple tips — declutter your schedule and enhance your downtime.",
+        "image": { "url": "/assets/img/home-2/news/11.jpg" },
+        "category": "Lifestyle",
+        "author": "Admin",
+        "publishedAt": "2025-03-11",
+        "slug": "luxury-amenities",
+        "views": 19,
+        "ctaText": "VIEW MORE",
+        "ctaLink": "/news"
+      },
+      {
+        "id": 3,
+        "title": "Behind the Scenes: Life Inside a Luxury Hotel",
+        "excerpt": "Luxury stays offer long-term memorable experiences through personalized service.",
+        "image": { "url": "/assets/img/home-2/news/12.jpg" },
+        "category": "Events",
+        "author": "Admin",
+        "publishedAt": "2025-03-11",
+        "slug": "behind-the-scenes",
+        "views": 19,
+        "ctaText": "VIEW MORE",
+        "ctaLink": "/news"
+      }
+    ]
+  },
+  "contact": {
+    "breadcrumbBg": {
+      "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782299415/parkqueen/d6stlmgkhozcbdrlmzbt.jpg",
+      "public_id": "parkqueen/d6stlmgkhozcbdrlmzbt"
+    },
+    "location": "The ParkQueen Hotel, Opposite Devi Lal Park, Rohtak, Haryana 124001, India",
+    "email": "fom@parkqueenhotels.com",
+    "phone": "+91 9088809991",
+    "mapEmbed": "https://maps.google.com/maps?q=The+ParkQueen+Hotel+Rohtak+Haryana&t=&z=14&ie=UTF8&iwloc=&output=embed"
+  },
+  "service": {
+    "breadcrumbBg": "/assets/img/breadcrumb.jpg",
+    "serviceBoxes": {
+      "subtitle": "OUR SERVICES",
+      "heading": "Premium Hotel Services & Amenities",
+      "description": "Discover the comprehensive range of services at The ParkQueen Hotel — crafted for comfort, convenience, and a memorable stay in Rohtak."
+    },
+    "offersSubtitle": "our special offer",
+    "offersHeading": "Our Latest Special Offer's",
+    "statsBg": {
+      "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782299718/parkqueen/service/fac4jxbrxvp8tfrhsofd.jpg",
+      "public_id": "parkqueen/service/fac4jxbrxvp8tfrhsofd"
+    },
+    "stats": {
+      "rooms": {
+        "value": "4",
+        "suffix": "k+",
+        "label": "Rooms"
+      },
+      "facilities": {
+        "value": "200",
+        "suffix": "+",
+        "label": "Facilities"
+      },
+      "clients": {
+        "value": "2",
+        "suffix": "k",
+        "label": "Clients"
+      },
+      "staff": {
+        "value": "150",
+        "suffix": "+",
+        "label": "Staff"
+      }
+    },
+    "seo": {
+      "title": "Our Services — The ParkQueen Hotel, Rohtak",
+      "description": "Discover premium hotel services at The ParkQueen Hotel in Rohtak, Haryana — fine dining, spa & wellness, banquet halls, gym, room service and more.",
+      "keywords": "hotel services Rohtak, ParkQueen services, room service Rohtak, banquet services Haryana, spa hotel Rohtak",
+      "ogImage": null
+    }
+  },
+  "facilities": {
+    "breadcrumbBg": {
+      "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782198039/parkqueen/excngkasldqumukxbm51.jpg",
+      "public_id": "parkqueen/excngkasldqumukxbm51"
+    },
+    "items": [
+      {
+        "id": 1,
+        "image": {
+          "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782203378/parkqueen/gavktvu2xrmeedlutf9i.jpg",
+          "public_id": "parkqueen/gavktvu2xrmeedlutf9i"
+        },
+        "icon": "fa-utensils",
+        "title": "Restaurant & Dining",
+        "text": "Savor exceptional cuisine crafted by our chefs — from traditional Indian flavours to continental delights."
+      },
+      {
+        "id": 2,
+        "image": {
+          "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782203241/parkqueen/bsmsqmwa9ncdbspkp2ei.jpg",
+          "public_id": "parkqueen/bsmsqmwa9ncdbspkp2ei"
+        },
+        "icon": "fa-restroom",
+        "title": "Spa & Wellness",
+        "text": "Rejuvenate your body and mind with our premium spa treatments."
+      },
+      {
+        "id": 3,
+        "image": {
+          "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782203259/parkqueen/tsegyzr2e7ac3i8yxkyv.jpg",
+          "public_id": "parkqueen/tsegyzr2e7ac3i8yxkyv"
+        },
+        "icon": "fa-champagne-glasses",
+        "title": "Banquets & Events",
+        "text": "Host your weddings, corporate events, and celebrations in our beautifully appointed banquet halls."
+      },
+      {
+        "id": 4,
+        "image": {
+          "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782203275/parkqueen/f9ypxp51vhsjviadh1nh.jpg",
+          "public_id": "parkqueen/f9ypxp51vhsjviadh1nh"
+        },
+        "icon": "fa-dumbbell",
+        "title": "Fitness & Gym",
+        "text": "Stay on top of your routine with our fully equipped fitness centre."
+      },
+      {
+        "id": 6,
+        "image": {
+          "url": "https://res.cloudinary.com/dvanvxd7t/image/upload/v1782203298/parkqueen/iqw7hyjwelicsbljecic.jpg",
+          "public_id": "parkqueen/iqw7hyjwelicsbljecic"
+        },
+        "icon": "fa-car-rear",
+        "title": "Free Guest Parking",
+        "text": "Secure, complimentary parking for all guests."
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+# Dependencies
+/node_modules
+
+# Next.js build output
+/.next
+/out
+
+# Production build
+/build
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Cache
+.cache
+.parcel-cache
+.eslintcache
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Coverage
+coverage/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Package manager files (optional)
+.pnpm-store/
+
+# Turbo
+.turbo/
+
+# Uploads (uncomment if generated at runtime)
+# public/uploads/
+# uploads/
+
+# Generated media (uncomment if stored locally)
+# public/images/generated/
+# public/uploads/generated/
+
+# Docker
+*.pid
+*.seed
+
+# Misc
+*.swp
+*.swo

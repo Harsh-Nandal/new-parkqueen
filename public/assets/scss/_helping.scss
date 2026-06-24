@@ -1,0 +1,462 @@
+
+//page scroll bar add
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px $bg-color; 
+	border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $theme-color;
+	border-radius: 10px;
+}
+//page scroll bar add
+
+//Basic Code Start
+.fix {
+  overflow: hidden;
+}
+
+.ralt{
+ position: relative;
+}
+
+//Basic Code End
+
+//Video Css Start
+.ripple {
+  position: relative;
+
+  &::before,&::after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 50px;
+      height: 50px;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(170, 132, 83, 0.6);
+      -webkit-animation: rippleOne 3s infinite;
+      animation: rippleOne 3s infinite;
+  }
+
+  &::before {
+      -webkit-animation-delay: 0.9s;
+      animation-delay: 0.9s;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+
+  &::after {
+      -webkit-animation-delay: 0.6s;
+      animation-delay: 0.6s;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+}
+//Video Css End
+
+
+
+.array-buttons-2 {
+  @include flex;
+  gap: 20px;
+
+  @include breakpoint (max-xl) {
+    flex-wrap: wrap;
+  }
+
+  .array-prev {
+     width: 42px;
+     height: 42px;
+     line-height: 42px;
+     text-align: center;
+     background-color: $header-color;
+     color: #00E5FF;
+     @include transition;
+     border-radius: 100%;
+
+    &:hover {
+       background: $theme-color;
+       color: $white;
+    }
+  }
+  
+  .array-next {
+      width: 42px;
+      height: 42px;
+      line-height: 42px;
+      border-radius: 100%;
+      text-align: center;
+      background: #2ADDC8;
+      color: $header-color;
+      @include transition;
+  
+      &:hover {
+         background: $theme-color;
+         color: $white;
+      }
+   }
+}
+
+.array-buttons-4 {
+  @include flex;
+  gap: 20px;
+
+  @include breakpoint (max-xl) {
+    flex-wrap: wrap;
+  }
+
+  .array-prev {
+     width: 45px;
+     height: 45px;
+     line-height: 45px;
+     text-align: center;
+     background: $bg-color;
+     color: $white;
+     @include transition;
+     border-radius: 100%;
+
+  }
+  
+  .array-next {
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      border: 1px solid rgba(65, 65, 65, 1);
+      border-radius: 100%;
+      text-align: center;
+      background: transparent;
+      color: $white;
+      @include transition;
+  
+      &:hover {
+         background: $bg-color;
+         border: 1px none;
+         color: $white;
+      }
+   }
+}
+//pagination default
+
+//pagination default
+
+
+.bg-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+.slide-transtion {
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+}
+.brand-slide-element {
+	width: auto;
+	display: inline-block;
+}
+
+
+.sticky-style {
+  position: sticky !important;
+  top: 100px;
+}
+
+
+.custom-container {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+
+
+.bw-img-anim-left,
+.bw-img-anim-right {
+  transition: clip-path 0.5s ease-out;
+}
+
+
+
+
+//>>>>> Nice Select Css Start <<<<<//
+.nice-select {
+  background-color: transparent;
+  width: unset;
+  outline: none;
+  // border-bottom: 2px solid $border-color !important;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.nice-select .current {
+  margin-right: 12px;
+}
+
+.nice-select.open .list {
+  background: $bg-color;
+  margin-top: 16px;
+  width: 100%;
+  text-transform: capitalize;
+  color: $text-color;
+}
+
+.nice-select .option.selected.focus {
+  background: $bg-color;
+  outline: none;
+  color: $text-color;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+}
+
+.nice-select .option {
+  border: none;
+}
+
+.nice-select .option:hover {
+  background: transparent;
+}
+
+//>>>>> Nice Select Css End <<<<<//
+
+.p-relative {
+  position: relative;
+}
+
+.tp-clip-anim {
+  position: relative;
+  overflow: hidden;
+
+  .mask {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.1);
+    opacity: 0;
+    animation: reveal 1s forwards;
+  }
+
+  // delay for each slice
+  @for $i from 1 through 9 {
+    .mask-#{$i} {
+      clip-path: inset(0 #{(9 - $i) * 11.1%} 0 #{($i - 1) * 11.1%});
+      animation-delay: #{$i * 0.1}s;
+    }
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.swiper-dot-1 {
+  position: relative;
+  z-index: 999;
+  margin-top: 60px;
+  .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      transition: 0.6s;
+      border-radius: 30px;
+      background-color: #D9D9D9;
+      opacity: 1;
+      position: relative;
+
+      &:not(:last-child){
+        margin-right: 10px;
+      }
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: $theme-color;
+      transition: 0.6s;
+      position: relative;
+      width: 8px;
+      height: 8px;
+      border-radius: 30px;
+
+      &::before {
+        @include before;
+        width: 8px;
+        height: 8px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+         border-radius: 30px;
+      }
+  }
+
+  &.style-team {
+    .swiper-pagination-bullet {
+       background-color: $header-color;
+     }
+
+     .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: $theme-color;
+     }
+  }
+}
+
+.array-buttons {
+  @include flex;
+  gap: 20px;
+
+  .array-prev {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: $white;
+    color: $theme-color;
+    @include transition;
+
+    &:hover {
+        background-color: $theme-color;
+        color: $white;
+    }
+ }
+
+.array-next {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 4px;
+    text-align: center;
+    color: $white;
+    background-color: $theme-color;
+    @include transition;
+
+    &:hover {
+        background-color: $white;
+        color: $theme-color;
+    }
+}
+}
+
+.sticky-style {
+    position: sticky !important;
+    top: 100px;
+}
+
+.page-nav-wrap {
+        margin-top: 60px;
+
+        ul {
+            li {
+                display: inline-block;
+
+                &.active {
+
+                    .page-numbers {
+                        background-color: $theme-color;
+                        color: $white;
+                    }
+                }
+
+                .page-numbers {
+                    &.current {
+                        background-color: $theme-color;
+                        color: $white;
+                    }
+
+                    display: inline-block;
+                    width: 48px;
+                    height: 48px;
+                    text-align: center;
+                    line-height: 48px;
+                    border-radius: 0;
+                    background: #F7F3EE;
+                    color: $header-color;
+                    font-weight: 400;
+                    transition: all 0.3s ease-in-out;
+                    margin: 0 2px;
+                    border-radius: 4px;
+                    font-family: $heading-font;
+
+                    @media (max-width: 767px) {
+                        margin-top: 10px;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: 14px;
+                    }
+
+                    i {
+                        margin-top: 2px;
+                        color: $header-color;
+                        @include transition;
+                    }
+
+                    &:hover {
+                        background-color: $theme-color;
+                        color: $white;
+
+                        i {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .swiper-dot-2 {
+  position: relative;
+  z-index: 999;
+  margin-top: 60px;
+  text-align: center;
+
+  .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      transition: 0.6s;
+      border-radius: 30px;
+      background-color: $header-color;
+      opacity: 1;
+      position: relative;
+
+      &:not(:last-child){
+        margin-right: 10px;
+      }
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: $theme-color;
+      transition: 0.6s;
+      position: relative;
+      width: 8px;
+      height: 8px;
+      border-radius: 30px;
+
+      &::before {
+        @include before;
+        width: 8px;
+        height: 8px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+         border-radius: 30px;
+      }
+  }
+}

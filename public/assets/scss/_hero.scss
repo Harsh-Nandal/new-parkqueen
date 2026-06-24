@@ -1,0 +1,469 @@
+.hero-1 {
+    padding-top: 220px;
+    padding-bottom: 60px;
+    position: relative;
+
+    @include breakpoint (max-xxl) {
+        padding-top: 200px;
+    }
+
+     @include breakpoint (max-lg) {
+        padding-top: 160px;
+    }
+
+    .container-fluid {
+        padding: 0 60px;
+
+         @include breakpoint (max-xxxl) {
+            padding: 0 50px;
+        }
+
+        @include breakpoint (max-xxl) {
+            padding: 0 30px;
+        }
+
+        @include breakpoint (max-sm) {
+            padding: 0 15px;
+        }
+    }
+
+    .signature-image {
+        position: absolute;
+        bottom: 205px;
+        right: 250px;
+
+        @include breakpoint (max-xxl) {
+            display: none;
+        }
+    }
+
+    .hero-content {
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            color: $white;
+            max-width: 422px;
+            margin-bottom: 30px;
+
+            @include breakpoint (max-xxl) {
+                font-size: 16px;
+            }
+        }
+
+          .theme-btn {
+                background-color: transparent;
+                z-index: 1;
+                color: $white;
+                position: relative;
+                overflow: hidden;
+                padding: 22px 25px;
+                height: 55px;
+
+                img {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    z-index: -2;
+                }
+
+				 &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -16px;
+                    z-index: -1;
+                    right: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 0%;
+                    margin: auto;
+                    transform: rotate(-45deg);
+                    background-color: $theme-color;
+                    transition: 900ms cubic-bezier(0.52, 1.64, 0.37, 0.66);
+                    border-radius: 10px;
+                }
+
+                &:hover {
+                    color: $white;
+
+                    &::before {
+                        height: 550%;
+                        
+                    }
+                }
+			}
+
+        .hero-wrapper {
+            @include flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-top: 250px;
+
+            @include breakpoint (max-xxl) {
+                margin-top: 40px;
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+
+            h1 {
+                color: $white;
+                margin-bottom: -30px;
+
+                 @include breakpoint (max-md) {
+                    margin-bottom: 0;
+                }
+            }
+
+            .hero-box {
+                border-radius: 10px;
+                backdrop-filter: blur(40px);
+                padding: 30px;
+                width: 700px;
+
+                 @include breakpoint (max-md) {
+                    max-width: 345px;
+                }
+
+                .top-item {
+                    @include flex;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+
+                    h4 {
+                        letter-spacing: 0.5px;
+                        color: $white;
+                    }
+                }
+
+                .hero-item {
+
+                    .hero-image {
+                        img {
+                            @include imgw;
+                            border-radius: 6px;
+                        }
+                    }
+
+                    h6 {
+                        color: $white;
+                        font-size: 14px;
+                        font-weight: 600;
+                        margin-top: 20px;
+                        font-family: $body-font;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero-2 {
+    padding-top: 270px;
+    padding-bottom: 120px;
+    position: relative;
+
+    @include breakpoint (max-xxl) {
+        padding-top: 140px;
+    }
+
+     @include breakpoint (max-lg) {
+        padding-top: 130px;
+        padding-bottom: 80px;
+    }
+
+    .hero-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        video {
+            width: 100%;
+            height: 992px;
+            object-fit: cover;
+          }
+       }
+
+    .hero-list {
+        @include flex;
+        gap: 30px;
+        position: absolute;
+        left: 100px;
+        bottom: 0;
+
+        @include breakpoint (max-lg) {
+            display: none;
+        }
+
+        li {
+            background-color: $theme-color;
+            color: $white;
+            border-radius: 6px 6px 0 0;
+            padding: 5px 15px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            position: relative;
+
+            &.style-2 {
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 30px;
+                    background-color: $theme-color;
+                    left: -20px;
+                    top: 15px;
+                }
+            }
+        }
+    }
+
+    .container-fluid {
+        padding: 0 100px;
+        display: flex;
+        justify-content: flex-end;
+
+         @include breakpoint (max-xxxl) {
+            padding: 0 50px;
+        }
+
+        @include breakpoint (max-xxl) {
+            padding: 0 30px;
+            justify-content: flex-start;
+        }
+
+        @include breakpoint (max-sm) {
+            padding: 0 15px;
+        }
+    }
+
+    .from-box {
+        border-radius: 6px;
+        max-width: 614px;
+        padding: 40px 27px;
+        margin-top: 100px;
+        width: 100%;          
+        flex: 0 0 auto;
+        position: relative;
+
+        @include breakpoint (max-xxl) {
+            padding: 30px 25px;
+            max-width: initial;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: $white;
+
+            @include breakpoint (max-sm) {
+                font-size: 26px;
+            }
+        }
+
+        .form-clt {
+            margin-top: 30px;
+
+            span {
+                font-size: 18px;
+                font-weight: 400;
+                display: inline-block;
+                font-family: $heading-font;
+                color: $white;
+                margin-bottom: 10px;
+            }
+
+            input {
+                border: none;
+                width: 100%;
+                background: transparent;
+                border-bottom: 1px solid $white;
+                padding-bottom: 12px;
+                color-scheme: dark;
+
+                &::placeholder {
+                    color: $white;
+                }
+            }
+
+            .form {
+                .single-select {
+                    border: none;
+                    background-color: transparent;
+                    border-bottom: 1px solid $white;
+                    border-radius: 0;
+                    padding: 0;
+                    padding-bottom: 19px;
+                    line-height: initial;
+                    height: initial;
+
+                    span {
+                        margin-bottom: 0;
+                    }
+
+                    .list {
+                        width: 100%;
+                    }
+
+                    &::after {
+                        width: 8px;
+                        height: 8px;
+                        top: 33%;
+                        border-bottom: 2px solid #fff;
+                        border-right: 2px solid #fff;
+                    }
+                }
+            }
+
+            .gt-theme-btn {
+                &::before {
+                    width: 82%;
+                }
+
+                &:hover {
+                &::before {
+                    height: 2000%;
+                    background-color: $white;
+                }
+                color: $header-color;
+                }
+            }
+        }
+
+        .theme-btn {
+            background-color: $white;
+            color: $header-color;
+            justify-content: center;
+
+            &::before {
+                transform: rotate(-25deg);
+            }
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}
+
+.hero-3 {
+    border-radius: 20px;
+    position: relative;
+    z-index: 9;
+    margin: 0px 40px 0;
+    padding: 100px 0 0;
+   
+
+    @include breakpoint (max-xxl) {
+       margin: 0px 30px 0;
+       padding-bottom: 100px;
+       padding-top: 150px;
+    }
+
+    @include breakpoint (max-lg) {
+        padding: 140px 0 0;
+        padding-bottom: 0;
+    }
+
+
+    @include breakpoint (max-sm) {
+       margin: 0px 15px 0;
+    }
+
+    &::before {
+        @include before;
+        background: linear-gradient(90deg, rgba(170, 132, 83, 0) 0%, rgba(28, 28, 28, 0.8) 50%, #1C1C1C 95.19%);
+        z-index: -1;
+    }
+
+    .container-fluid {
+        padding: 0 74px;
+
+         @include breakpoint (max-xl4) {
+			padding: 0 60px;
+		}
+
+        @include breakpoint (max-xxxl) {
+			padding: 0 50px;
+		}
+
+        @include breakpoint (max-xxl) {
+			padding: 0 30px;
+		}
+
+        @include breakpoint (max-sm) {
+			padding: 0 15px;
+		}
+    }
+
+    .hero-image {
+        margin-left: -75px;
+
+        @include breakpoint (max-xxl) {
+			margin-left: 0;
+		}
+
+        img {
+            @include breakpoint (max-xxxl) {
+                @include imgw;
+            }
+        }
+    }
+
+    .hero-content {
+        h1 {
+            color: $white;
+            font-size: 72px;
+            margin-bottom: 50px;
+
+             @include breakpoint (max-xl4) {
+                font-size: 60px;
+            }
+
+            @include breakpoint (max-xxxl) {
+                font-size: 55px;
+            }
+
+            @include breakpoint (max-xxl) {
+                margin-bottom: 30px;
+                font-size: 50px;
+            }
+
+            @include breakpoint (max-lg) {
+                font-size: 50px;
+            }
+
+            @include breakpoint (max-sm) {
+                font-size: 30px;
+            }
+        }
+
+        .hero-button {
+            @include flex;
+            gap: 20px;
+
+            @include breakpoint (max-xxl) {
+                flex-wrap: wrap;
+            }
+
+            .theme-btn {
+
+                &.style-border {
+                    background-color: transparent;
+                    border: 1.2px solid rgba(255, 255, 255, 0.2);
+
+                    &::before {
+                        background-color: $theme-color;
+                    }
+
+                    &:hover {
+                        border: 1px solid $theme-color;
+                    }
+                }
+            }
+        }
+    }
+}
